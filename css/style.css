@@ -121,6 +121,7 @@ li {
 img {
     width: 100%;
     /* ocupa 100% do espaço disponivel a ela*/
+    height: 65%;
     border-radius: 5px;
 }
 
