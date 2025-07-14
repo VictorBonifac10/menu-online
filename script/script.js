@@ -6,6 +6,7 @@ const btnMapAll = document.querySelector('#map-all')
 const btnReduce = document.querySelector('#add-all')
 const paragraph = document.querySelector(".showValueAll")
 const btnvegan = document.querySelector('#only-vegan')
+const input = document.querySelector('.input-porcent')
 
 function coinFormat(element){
     return element.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) //formato moeda
@@ -32,7 +33,7 @@ function mapAllitems() {
 
     const descount = menuOptions.map(element => ({
         ...element, //Spread Operator (matem todos os items de um array sem alteração)
-        price: element.price * 0.9
+        price: element.price * (1 - (input.value / 100))
     }))
 
     showAll(descount);
