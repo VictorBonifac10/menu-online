@@ -9,6 +9,7 @@
 
 body {
     background-color: black;
+    height: 100vh;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 70px;
 }
 
@@ -29,7 +30,7 @@ header {
     margin: 5px;
 }
 
-#links{
+#links {
     display: flex;
     gap: 15px;
 }
@@ -55,7 +56,6 @@ header {
 }
 
 #title {
-    margin-left: 10px;
     font-size: 25px;
     color: rgb(83, 181, 63);
 }
@@ -70,10 +70,6 @@ header {
     margin-bottom: 20px;
 }
 
-#content-two {
-    margin-left: 100px;
-}
-
 .container-button {
     margin: 30px 0;
     display: flex;
@@ -84,29 +80,26 @@ header {
 
 main {
     display: flex;
-    margin: 10px;
-    padding: 30px;
+    padding: 40px;
+    justify-content: space-between;
     align-items: center;
 }
 
 #content {
     margin-top: 80px;
-    margin-left: 30px;
     max-width: 500px;
 }
 
-input{
+input {
     width: 250px;
     padding: 10px;
     border: 1px solid #b8aeae;
     border-radius: 50px;
-
 }
 
 ul {
     list-style: none;
     display: grid;
-    /*aqui podemos definir quantas linhas e colunas desejamos ter no layout*/
     grid-template-columns: 150px 150px 150px;
     justify-content: center;
     gap: 20px;
@@ -134,8 +127,40 @@ p {
     color: rgb(83, 181, 63);
 }
 
-.showValueAll{
+.showValueAll {
     margin-top: 20px;
     font-weight: bold;
     color: rgb(83, 181, 63);
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #content {
+        margin-top: 10px;
+    }
+
+    input{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    ul {
+        grid-template-columns: 150px 150px;
+    }
 }
