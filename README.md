@@ -6,7 +6,7 @@ Landing page responsiva desenvolvida com foco no treinamento prático dos métod
 
 <img src="./assets/readme/readme.png" alt="preview" width="500" />
 
-🔗 [Acesse aqui a versão online](https://victorbonifac10.github.io/tool-store/)
+🔗 [Acesse aqui a versão online](https://victorbonifac10.github.io/menu-online/)
 
 ## ✨ Recursos
 
